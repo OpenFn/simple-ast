@@ -1,0 +1,128 @@
+[
+  {
+    "name": "_toConsumableArray",
+    "params": [
+      {
+        "name": "arr",
+        "type": "Identifier"
+      }
+    ],
+    "docs": "none."
+  },
+  {
+    "name": "execute",
+    "params": [],
+    "docs": [
+      "* @module Adaptor ",
+      "*\n * Execute a sequence of operations.\n * Wraps `language-common/execute`, and prepends initial state for DHIS2.\n * @example\n * execute(\n *   create('foo'),\n *   delete('bar')\n * )(state)\n * @constructor\n * @param {Operations} operations - Operations to be performed.\n * @returns {Operation}\n "
+    ]
+  },
+  {
+    "name": "fetchData",
+    "params": [
+      {
+        "name": "params",
+        "type": "Identifier"
+      }
+    ],
+    "docs": [
+      "*\n * Fetch a dataValueSet\n * @example\n * execute(\n *   fetchData(dataSetId, period, orgUnit)\n * )(state)\n * @constructor\n * @param {string} dataSet - data set ID\n * @param {string} period - period code\n * @param {string} orgUnit - org unit ID\n * @returns {Operation}\n "
+    ]
+  },
+  {
+    "name": "fetchEvents",
+    "params": [
+      {
+        "name": "params",
+        "type": "Identifier"
+      }
+    ],
+    "docs": [
+      "*\n * Fetch an event\n * @example\n * execute(\n *   fetchEvent(eventsQuery)\n * )(state)\n * @constructor\n * @param {object} eventsQuery - data to query for events\n * @returns {Operation}\n "
+    ]
+  },
+  {
+    "name": "event",
+    "params": [
+      {
+        "name": "eventData",
+        "type": "Identifier"
+      }
+    ],
+    "docs": [
+      "*\n * Create an event\n * @example\n * execute(\n *   event(eventData)\n * )(state)\n * @constructor\n * @param {object} eventData - Payload data for the event\n * @returns {Operation}\n "
+    ]
+  },
+  {
+    "name": "dataValueSet",
+    "params": [
+      {
+        "name": "data",
+        "type": "Identifier"
+      }
+    ],
+    "docs": [
+      "*\n * Send data values using the dataValueSets resource\n * @example\n * execute(\n *   dataValueSet(data)\n * )(state)\n * @constructor\n * @param {object} data - Payload data for the data value set\n * @returns {Operation}\n "
+    ]
+  },
+  {
+    "name": "dataElement",
+    "params": [
+      {
+        "name": "key",
+        "type": "Identifier"
+      },
+      {
+        "name": "value",
+        "type": "Identifier"
+      }
+    ],
+    "docs": [
+      "*\n * Create a \"dataElement\" pairing for DHIS2.\n * @example\n * execute(\n *   dataElement(key, value)\n * )(state)\n * @constructor\n * @param {object} key - Payload data for the Data Element key\n * @param {object} value - Payload data for the Data Element value\n * @returns {Operation}\n "
+    ]
+  },
+  {
+    "name": "createTEI",
+    "params": [
+      {
+        "name": "data",
+        "type": "Identifier"
+      }
+    ],
+    "docs": [
+      "*\n * Create one or many new Tracked Entity Instances\n * @example\n * execute(\n *   createTEI(data)\n * )(state)\n * @constructor\n * @param {object} data - Payload data for new tracked entity instance(s)\n * @returns {Operation}\n "
+    ]
+  },
+  {
+    "name": "updateTEI",
+    "params": [
+      {
+        "name": "tei",
+        "type": "Identifier"
+      },
+      {
+        "name": "data",
+        "type": "Identifier"
+      }
+    ],
+    "docs": [
+      "*\n * Update existing Tracked Entity Instances\n * @example\n * execute(\n *   updateTEI(tei, data)\n * )(state)\n * @constructor\n * @param {object} tei - Payload data for the TEI to be updated\n * @param {object} data - Payload data for updating a TEI\n * @returns {Operation}\n "
+    ]
+  },
+  {
+    "name": "enroll",
+    "params": [
+      {
+        "name": "tei",
+        "type": "Identifier"
+      },
+      {
+        "name": "enrollmentData",
+        "type": "Identifier"
+      }
+    ],
+    "docs": [
+      "*\n * Enroll a tracked entity instance in a program\n * @example\n * execute(\n *   enroll(enrollmentData)\n * )(state)\n * @constructor\n * @param {object} enrollmentData - Payload data for new enrollment\n * @returns {Operation}\n "
+    ]
+  }
+]
