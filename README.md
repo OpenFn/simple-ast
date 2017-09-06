@@ -6,5 +6,5 @@ This is normally called by the `bundle` script of OpenFn's language-packages mod
 
 ## cli usage
 ```sh
-node ./lib/generate.js --adaptor ${pack-to-adaptor/lib/Adaptor.js} --output ${output-directory/folder}
+node ./lib/generate.js --adaptor ~/language-http/lib/Adaptor.js --output ./tmp/ast.json
 ```
