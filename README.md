@@ -12,5 +12,5 @@ module after the adaptor is `built` but before it is tarballed for a release.
 ## cli usage
 
 ```sh
-node ./lib/generate.js --adaptor ~/language-http/lib/Adaptor.js --output ./tmp/ast.json
+node ./lib/generate.js --adaptor ~/language-http/src/Adaptor.js --output ./tmp/ast.json
 ```
