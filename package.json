@@ -14,15 +14,15 @@
   ],
   "dependencies": {
     "babylon": "^6.18.0",
+    "doctrine": "^2.0.0",
     "fs": "0.0.1-security",
     "lodash.isequal": "^4.5.0",
-    "doctrine": "^2.0.0",
     "yargs": "^8.0.2"
   },
   "devDependencies": {
-    "@babel/parser": "^7.12.11",
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
+    "@babel/parser": "^7.12.11",
     "@babel/preset-stage-0": "^7.8.3",
     "mocha": "^2.3.3"
   }
