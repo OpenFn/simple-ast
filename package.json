@@ -1,7 +1,12 @@
 {
-  "name": "simple-ast",
+  "name": "@openfn/simple-ast",
   "version": "0.2.4",
   "description": "Generates OpenFn-readable ASTs for langauge packages",
+  "homepage": "https://docs.openfn.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openfn/simple-ast.git"
+  },
   "main": "lib/generate.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
