@@ -1,6 +1,6 @@
 {
   "name": "@openfn/simple-ast",
-  "version": "0.2.7",
+  "version": "0.2.9",
   "description": "Generates OpenFn-readable ASTs for langauge packages",
   "homepage": "https://docs.openfn.org",
   "repository": {
