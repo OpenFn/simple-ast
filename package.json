@@ -1,6 +1,6 @@
 {
   "name": "@openfn/simple-ast",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "Generates OpenFn-readable ASTs for adaptors",
   "homepage": "https://docs.openfn.org",
   "repository": {
