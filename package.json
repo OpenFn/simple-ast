@@ -7,6 +7,7 @@
     "type": "git",
     "url": "https://github.com/openfn/simple-ast.git"
   },
+  "bin": "lib/generate.js",
   "main": "lib/generate.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
